@@ -8,7 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
+  @State private var searchWord = ""
   @State private var contactsList = [ContactsModel]()
+
+
+  func sil(at offsets:IndexSet){
+      let p = contactsList[offsets.first!]
+      contactsList.remove(at: offsets.first!)
+    print("Kişi Sil : \(p.personID!)")
+  }
+
   var body: some View {
     NavigationStack{
       List{
@@ -16,7 +25,7 @@ struct HomeView: View {
           NavigationLink(destination: DetailView(person: person)){
             ContactsRow(contacts: person)
           }
-        }
+        }.onDelete(perform: sil)
       }.navigationTitle("Contacts")
         .toolbar{
           ToolbarItem(placement: .navigationBarTrailing){
@@ -32,12 +41,14 @@ struct HomeView: View {
           list.append(name)
           list.append(name1)
 
-         contactsList = list
+          contactsList = list
         }
-    }
+    }.searchable(text: $searchWord)
+      .onChange(of: searchWord) { s in
+        print("\(s) aranan kişi")
+      }
   }
 }
-
 #Preview {
   HomeView()
 }
