@@ -13,6 +13,8 @@
 		65EE3E972BB63CDF00A380CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EE3E962BB63CDF00A380CA /* Preview Assets.xcassets */; };
 		65EE3E9E2BB63CF400A380CA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E9D2BB63CF400A380CA /* RegisterView.swift */; };
 		65EE3EA02BB63CFF00A380CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E9F2BB63CFF00A380CA /* DetailView.swift */; };
+		65EE3EA22BB640F700A380CA /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3EA12BB640F600A380CA /* ContactsModel.swift */; };
+		65EE3EA42BB6427700A380CA /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3EA32BB6427700A380CA /* ContactsRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		65EE3E962BB63CDF00A380CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65EE3E9D2BB63CF400A380CA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		65EE3E9F2BB63CFF00A380CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		65EE3EA12BB640F600A380CA /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		65EE3EA32BB6427700A380CA /* ContactsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				65EE3E912BB63CDD00A380CA /* HomeView.swift */,
 				65EE3E9D2BB63CF400A380CA /* RegisterView.swift */,
 				65EE3E9F2BB63CFF00A380CA /* DetailView.swift */,
+				65EE3EA32BB6427700A380CA /* ContactsRow.swift */,
+				65EE3EA12BB640F600A380CA /* ContactsModel.swift */,
 				65EE3E932BB63CDF00A380CA /* Assets.xcassets */,
 				65EE3E952BB63CDF00A380CA /* Preview Content */,
 			);
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EE3EA22BB640F700A380CA /* ContactsModel.swift in Sources */,
 				65EE3E9E2BB63CF400A380CA /* RegisterView.swift in Sources */,
 				65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */,
+				65EE3EA42BB6427700A380CA /* ContactsRow.swift in Sources */,
 				65EE3EA02BB63CFF00A380CA /* DetailView.swift in Sources */,
 				65EE3E902BB63CDD00A380CA /* ContactsSwiftUIApp.swift in Sources */,
 			);
