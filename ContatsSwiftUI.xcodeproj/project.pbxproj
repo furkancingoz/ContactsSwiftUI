@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65EE3E902BB63CDD00A380CA /* ContatsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E8F2BB63CDD00A380CA /* ContatsSwiftUIApp.swift */; };
-		65EE3E922BB63CDD00A380CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E912BB63CDD00A380CA /* ContentView.swift */; };
+		65EE3E902BB63CDD00A380CA /* ContactsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */; };
+		65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E912BB63CDD00A380CA /* HomeView.swift */; };
 		65EE3E942BB63CDF00A380CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EE3E932BB63CDF00A380CA /* Assets.xcassets */; };
 		65EE3E972BB63CDF00A380CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EE3E962BB63CDF00A380CA /* Preview Assets.xcassets */; };
+		65EE3E9E2BB63CF400A380CA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E9D2BB63CF400A380CA /* RegisterView.swift */; };
+		65EE3EA02BB63CFF00A380CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E9F2BB63CFF00A380CA /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65EE3E8C2BB63CDD00A380CA /* ContatsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65EE3E8F2BB63CDD00A380CA /* ContatsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatsSwiftUIApp.swift; sourceTree = "<group>"; };
-		65EE3E912BB63CDD00A380CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSwiftUIApp.swift; sourceTree = "<group>"; };
+		65EE3E912BB63CDD00A380CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		65EE3E932BB63CDF00A380CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65EE3E962BB63CDF00A380CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65EE3E9D2BB63CF400A380CA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		65EE3E9F2BB63CFF00A380CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		65EE3E8E2BB63CDD00A380CA /* ContatsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				65EE3E8F2BB63CDD00A380CA /* ContatsSwiftUIApp.swift */,
-				65EE3E912BB63CDD00A380CA /* ContentView.swift */,
+				65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */,
+				65EE3E912BB63CDD00A380CA /* HomeView.swift */,
+				65EE3E9D2BB63CF400A380CA /* RegisterView.swift */,
+				65EE3E9F2BB63CFF00A380CA /* DetailView.swift */,
 				65EE3E932BB63CDF00A380CA /* Assets.xcassets */,
 				65EE3E952BB63CDF00A380CA /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65EE3E922BB63CDD00A380CA /* ContentView.swift in Sources */,
-				65EE3E902BB63CDD00A380CA /* ContatsSwiftUIApp.swift in Sources */,
+				65EE3E9E2BB63CF400A380CA /* RegisterView.swift in Sources */,
+				65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */,
+				65EE3EA02BB63CFF00A380CA /* DetailView.swift in Sources */,
+				65EE3E902BB63CDD00A380CA /* ContactsSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 				DEVELOPMENT_TEAM = Y9XJT8FRMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Contacts;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +313,7 @@
 				DEVELOPMENT_TEAM = Y9XJT8FRMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Contacts;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
