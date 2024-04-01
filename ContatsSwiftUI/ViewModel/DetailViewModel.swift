@@ -9,4 +9,8 @@ import Foundation
 
 class DetailViewModel  : ObservableObject {
   
+  func update(pID : Int, pName: String, pNumber: String) {
+    print("Güncellendi: \(pID) - \(pName) - \(pNumber)")
+  }
+
 }

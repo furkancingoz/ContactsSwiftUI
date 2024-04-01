@@ -12,24 +12,10 @@ struct DetailView: View {
   @State private var phoneNumber  = ""
 
   var person: ContactsModel
-     @Binding var contactsList: [ContactsModel]
-
-     func update(pID: Int, pName: String, pNumber: String) {
-         // Kişiyi güncelle
-         for (index, contact) in contactsList.enumerated() {
-             if contact.personID == person.personID {
-                 contactsList[index].personName = name
-                 contactsList[index].personNumber = phoneNumber
-                 break
-             }
-         }
-         print("Güncellendi: \(name) - \(phoneNumber)")
-     }
-
+var viewModel = DetailViewModel()
 
   var body: some View {
-    NavigationStack{
-      VStack{
+          VStack{
         TextField("Name",text: $name){
 
         }.textFieldStyle(.roundedBorder)
@@ -41,7 +27,7 @@ struct DetailView: View {
           .padding()
 
         Button("Update"){
-          update(pID: person.personID!, pName: name, pNumber: phoneNumber)
+          viewModel.update(pID: person.personID!, pName: name, pNumber: phoneNumber)
         }
         .padding(15)
         .foregroundStyle(.white)
@@ -56,6 +42,5 @@ struct DetailView: View {
           phoneNumber = person.personNumber!
         }
     }
-  }
 }
 

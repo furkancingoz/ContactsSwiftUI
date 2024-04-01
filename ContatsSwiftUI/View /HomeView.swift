@@ -9,44 +9,41 @@ import SwiftUI
 
 struct HomeView: View {
   @State private var searchWord = ""
-  @State private var contactsList = [ContactsModel]()
-
+  @ObservedObject var viewModel = HomeViewModel()
 
   func sil(at offsets:IndexSet){
-      let p = contactsList[offsets.first!]
-      contactsList.remove(at: offsets.first!)
+    let p = viewModel.contactsList[offsets.first!]
+    viewModel.contactsList.remove(at: offsets.first!)
     print("Kişi Sil : \(p.personID!)")
   }
 
   var body: some View {
     NavigationStack{
       List{
-        ForEach(contactsList) { person in
-          NavigationLink(destination: DetailView(person: person, contactsList: $contactsList)){
+        ForEach(viewModel.contactsList) { person in
+          NavigationLink(destination: DetailView(person: person)){
             ContactsRow(contacts: person)
           }
         }.onDelete(perform: sil)
       }.navigationTitle("Contacts")
         .toolbar{
           ToolbarItem(placement: .navigationBarTrailing){
-            NavigationLink(destination: RegisterView(contactsList: $contactsList)){
-                Image(systemName: "plus")
+            NavigationLink(destination: RegisterView()){
+              Image(systemName: "plus")
             }
 
           }
         }.onAppear{
-          var list = [ContactsModel]()
-          var name = ContactsModel(personID: 1, personName: "Furkan", personNumber: "0541477****")
-          var name1 = ContactsModel(personID: 2, personName: "Sıla", personNumber: "0542312****")
-          list.append(name)
-          list.append(name1)
-
-          contactsList = list
+          viewModel.loadContacts()
         }
-    }.searchable(text: $searchWord)
-      .onChange(of: searchWord) { s in
-        print("\(s) aranan kişi")
-      }
+    }
+
+    /*.searchable(text: $searchWord)
+     .onChange(of: searchWord) { s in
+     print("\(s) aranan kişi")
+
+     }
+     */
   }
 }
 #Preview {
