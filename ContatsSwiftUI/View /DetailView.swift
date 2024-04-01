@@ -11,11 +11,21 @@ struct DetailView: View {
   @State private var name = ""
   @State private var phoneNumber  = ""
 
-  func update(pID: Int, pName : String, pNumber: String) {
-    print("test \(pName) - \(pNumber)")
-  }
+  var person: ContactsModel
+     @Binding var contactsList: [ContactsModel]
 
-  var person = ContactsModel()
+     func update(pID: Int, pName: String, pNumber: String) {
+         // Kişiyi güncelle
+         for (index, contact) in contactsList.enumerated() {
+             if contact.personID == person.personID {
+                 contactsList[index].personName = name
+                 contactsList[index].personNumber = phoneNumber
+                 break
+             }
+         }
+         print("Güncellendi: \(name) - \(phoneNumber)")
+     }
+
 
   var body: some View {
     NavigationStack{
@@ -31,7 +41,7 @@ struct DetailView: View {
           .padding()
 
         Button("Update"){
-          update(pID: person.personID!, pName: person.personName!, pNumber: person.personNumber!)
+          update(pID: person.personID!, pName: name, pNumber: phoneNumber)
         }
         .padding(15)
         .foregroundStyle(.white)
@@ -49,6 +59,3 @@ struct DetailView: View {
   }
 }
 
-#Preview {
-    DetailView()
-}

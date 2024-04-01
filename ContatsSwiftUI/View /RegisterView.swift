@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct RegisterView: View {
+  var viewModel = RegisterViewModel()
   @State private var name = ""
   @State private var phoneNumber  = ""
 
-  func save(personName : String, personNumber: String) {
-    print("test \(personName) - \(personNumber)")
-  }
-
   var body: some View {
-    NavigationStack{
-      VStack{
+    VStack(spacing: 50){
         TextField("Name",text: $name){
 
         }.textFieldStyle(.roundedBorder)
@@ -29,7 +25,7 @@ struct RegisterView: View {
           .padding()
 
         Button("Save"){
-          save(personName: name, personNumber: phoneNumber)
+          viewModel.save(personName: name, personNumber: phoneNumber)
         }
         .padding(15)
         .foregroundStyle(.white)
@@ -39,10 +35,6 @@ struct RegisterView: View {
 
 
       }.navigationTitle("Register")
-    }
   }
 }
 
-#Preview {
-  RegisterView()
-}

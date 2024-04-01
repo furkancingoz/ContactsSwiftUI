@@ -22,15 +22,15 @@ struct HomeView: View {
     NavigationStack{
       List{
         ForEach(contactsList) { person in
-          NavigationLink(destination: DetailView(person: person)){
+          NavigationLink(destination: DetailView(person: person, contactsList: $contactsList)){
             ContactsRow(contacts: person)
           }
         }.onDelete(perform: sil)
       }.navigationTitle("Contacts")
         .toolbar{
           ToolbarItem(placement: .navigationBarTrailing){
-            NavigationLink(destination: RegisterView()){
-              Image(systemName: "plus")
+            NavigationLink(destination: RegisterView(contactsList: $contactsList)){
+                Image(systemName: "plus")
             }
 
           }

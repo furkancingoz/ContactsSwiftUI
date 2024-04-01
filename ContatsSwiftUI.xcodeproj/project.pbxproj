@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65AAE7A42BBB3D320024610A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAE7A32BBB3D320024610A /* HomeViewModel.swift */; };
+		65AAE7A62BBB3D650024610A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAE7A52BBB3D650024610A /* RegisterViewModel.swift */; };
+		65AAE7A82BBB3D770024610A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAE7A72BBB3D770024610A /* DetailViewModel.swift */; };
 		65EE3E902BB63CDD00A380CA /* ContactsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */; };
 		65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E912BB63CDD00A380CA /* HomeView.swift */; };
 		65EE3E942BB63CDF00A380CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EE3E932BB63CDF00A380CA /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65AAE7A32BBB3D320024610A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		65AAE7A52BBB3D650024610A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		65AAE7A72BBB3D770024610A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		65EE3E8C2BB63CDD00A380CA /* ContatsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSwiftUIApp.swift; sourceTree = "<group>"; };
 		65EE3E912BB63CDD00A380CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65AAE79E2BBB3C030024610A /* View  */ = {
+			isa = PBXGroup;
+			children = (
+				65EE3E912BB63CDD00A380CA /* HomeView.swift */,
+				65EE3E9D2BB63CF400A380CA /* RegisterView.swift */,
+				65EE3E9F2BB63CFF00A380CA /* DetailView.swift */,
+				65AAE7A22BBB3CA10024610A /* List */,
+			);
+			path = "View ";
+			sourceTree = "<group>";
+		};
+		65AAE79F2BBB3C3D0024610A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65EE3EA12BB640F600A380CA /* ContactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65AAE7A12BBB3C7D0024610A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				65AAE7A32BBB3D320024610A /* HomeViewModel.swift */,
+				65AAE7A52BBB3D650024610A /* RegisterViewModel.swift */,
+				65AAE7A72BBB3D770024610A /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		65AAE7A22BBB3CA10024610A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				65EE3EA32BB6427700A380CA /* ContactsRow.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		65EE3E832BB63CDD00A380CA = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */,
-				65EE3E912BB63CDD00A380CA /* HomeView.swift */,
-				65EE3E9D2BB63CF400A380CA /* RegisterView.swift */,
-				65EE3E9F2BB63CFF00A380CA /* DetailView.swift */,
-				65EE3EA32BB6427700A380CA /* ContactsRow.swift */,
-				65EE3EA12BB640F600A380CA /* ContactsModel.swift */,
+				65AAE79F2BBB3C3D0024610A /* Model */,
+				65AAE79E2BBB3C030024610A /* View  */,
+				65AAE7A12BBB3C7D0024610A /* ViewModel */,
 				65EE3E932BB63CDF00A380CA /* Assets.xcassets */,
 				65EE3E952BB63CDF00A380CA /* Preview Content */,
 			);
@@ -151,6 +192,9 @@
 			files = (
 				65EE3EA22BB640F700A380CA /* ContactsModel.swift in Sources */,
 				65EE3E9E2BB63CF400A380CA /* RegisterView.swift in Sources */,
+				65AAE7A42BBB3D320024610A /* HomeViewModel.swift in Sources */,
+				65AAE7A62BBB3D650024610A /* RegisterViewModel.swift in Sources */,
+				65AAE7A82BBB3D770024610A /* DetailViewModel.swift in Sources */,
 				65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */,
 				65EE3EA42BB6427700A380CA /* ContactsRow.swift in Sources */,
 				65EE3EA02BB63CFF00A380CA /* DetailView.swift in Sources */,

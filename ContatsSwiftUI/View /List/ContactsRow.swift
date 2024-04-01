@@ -22,6 +22,4 @@ struct ContactsRow: View {
     }
 }
 
-#Preview {
-    ContactsRow()
-}
+
