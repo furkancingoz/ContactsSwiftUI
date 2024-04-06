@@ -34,8 +34,8 @@ struct HomeView: View {
                         
                     }
                 }.onAppear{
-                    viewModel.loadContacts()
                     veritabanıKopyala()
+                    viewModel.loadContacts()
                     print("ana sayfa dönüldü")
                 }
         }.searchable(text: $searchWord, prompt: "Ara")
@@ -49,7 +49,7 @@ struct HomeView: View {
         
         let veritabaniYolu = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         
-        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("rehber.sqlite")
+        let hedefYol = URL(fileURLWithPath: veritabaniYolu).appendingPathComponent("kisiler.sqlite")
         let fm = FileManager.default
         
         if fm.fileExists(atPath: hedefYol.path) {
