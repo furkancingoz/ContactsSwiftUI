@@ -25,7 +25,7 @@ struct RegisterView: View {
           .padding()
 
         Button("Save"){
-          viewModel.save(personName: name, personNumber: phoneNumber)
+          viewModel.save(kisi_adi: name, kisi_tel: phoneNumber)
         }
         .padding(15)
         .foregroundStyle(.white)
