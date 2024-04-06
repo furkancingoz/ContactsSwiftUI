@@ -14,7 +14,7 @@ struct HomeView: View {
     func sil(at offsets:IndexSet){
         let p = viewModel.contactsList[offsets.first!]
         viewModel.contactsList.remove(at: offsets.first!)
-        viewModel.sil(kisiID: p.personID!)
+        viewModel.sil(kisiID: p.kisi_id!)
     }
     
     var body: some View {
@@ -35,12 +35,17 @@ struct HomeView: View {
                     }
                 }.onAppear{
                     viewModel.loadContacts()
+                    veritabanıKopyala()
                     print("ana sayfa dönüldü")
                 }
         }.searchable(text: $searchWord, prompt: "Ara")
             .onChange(of: searchWord) { s  in
                 viewModel.ara(aramaKelimesi: s)
             }
+        
+    }
+    func veritabanıKopyala(){
+        let bundle = Bundle.main.path(forResource: "kisiler", ofType: ".sqlite")
         
     }
 }

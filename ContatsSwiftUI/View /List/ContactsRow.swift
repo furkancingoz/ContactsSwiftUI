@@ -12,9 +12,9 @@ struct ContactsRow: View {
   var contacts = ContactsModel()
     var body: some View {
       VStack(alignment: .leading,spacing: 15){
-        Text(contacts.personName!)
+        Text(contacts.kisi_ad!)
           .font(.system(size: 25))
-        Text(contacts.personNumber!)
+        Text(contacts.kisi_tel!)
           .font(.system(size: 25))
           .foregroundStyle(.gray)
 

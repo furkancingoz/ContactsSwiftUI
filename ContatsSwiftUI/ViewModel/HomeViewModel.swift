@@ -12,11 +12,11 @@ class HomeViewModel : ObservableObject {
 
   func loadContacts(){
     var list = [ContactsModel]()
-      let name = ContactsModel(personID: 1, personName: "Furkan", personNumber: "0541477****")
-      let name1 = ContactsModel(personID: 2, personName: "Sıla", personNumber: "0542312****")
+   /*   let name = ContactsModel(personID: 1, personName: "Furkan", kisi_tel: "0541477****")
+      let name1 = ContactsModel(personID: 2, kisi: "Sıla", kisi_tel: "0542312****")
     list.append(name)
     list.append(name1)
-
+*/
     contactsList = list
   }
     

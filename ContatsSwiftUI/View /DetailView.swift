@@ -27,7 +27,7 @@ var viewModel = DetailViewModel()
           .padding()
 
         Button("Update"){
-          viewModel.update(pID: person.personID!, pName: name, pNumber: phoneNumber)
+          viewModel.update(pID: person.kisi_id!, pName: name, pNumber: phoneNumber)
         }
         .padding(15)
         .foregroundStyle(.white)
@@ -38,8 +38,8 @@ var viewModel = DetailViewModel()
 
       }.navigationTitle("Detail")
         .onAppear{
-          name = person.personName!
-          phoneNumber = person.personNumber!
+          name = person.kisi_ad!
+          phoneNumber = person.kisi_tel!
         }
     }
 }

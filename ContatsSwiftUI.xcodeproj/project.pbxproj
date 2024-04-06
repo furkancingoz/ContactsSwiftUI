@@ -10,6 +10,12 @@
 		65AAE7A42BBB3D320024610A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAE7A32BBB3D320024610A /* HomeViewModel.swift */; };
 		65AAE7A62BBB3D650024610A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAE7A52BBB3D650024610A /* RegisterViewModel.swift */; };
 		65AAE7A82BBB3D770024610A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAE7A72BBB3D770024610A /* DetailViewModel.swift */; };
+		65CEB45E2BC19D6B00A72035 /* kisiler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 65CEB45D2BC19D6B00A72035 /* kisiler.sqlite */; };
+		65CEB46E2BC19DF000A72035 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB4642BC19DF000A72035 /* FMDatabaseQueue.m */; };
+		65CEB46F2BC19DF000A72035 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB4652BC19DF000A72035 /* FMDatabasePool.m */; };
+		65CEB4702BC19DF000A72035 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB4672BC19DF000A72035 /* FMDatabase.m */; };
+		65CEB4712BC19DF000A72035 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB46B2BC19DF000A72035 /* FMResultSet.m */; };
+		65CEB4722BC19DF000A72035 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB46D2BC19DF000A72035 /* FMDatabaseAdditions.m */; };
 		65EE3E902BB63CDD00A380CA /* ContactsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */; };
 		65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE3E912BB63CDD00A380CA /* HomeView.swift */; };
 		65EE3E942BB63CDF00A380CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EE3E932BB63CDF00A380CA /* Assets.xcassets */; };
@@ -24,6 +30,20 @@
 		65AAE7A32BBB3D320024610A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		65AAE7A52BBB3D650024610A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		65AAE7A72BBB3D770024610A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		65CEB45D2BC19D6B00A72035 /* kisiler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kisiler.sqlite; sourceTree = "<group>"; };
+		65CEB4602BC19DB100A72035 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		65CEB4622BC19DF000A72035 /* ContatsSwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContatsSwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		65CEB4632BC19DF000A72035 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		65CEB4642BC19DF000A72035 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		65CEB4652BC19DF000A72035 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		65CEB4662BC19DF000A72035 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		65CEB4672BC19DF000A72035 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		65CEB4682BC19DF000A72035 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		65CEB4692BC19DF000A72035 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		65CEB46A2BC19DF000A72035 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		65CEB46B2BC19DF000A72035 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		65CEB46C2BC19DF000A72035 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		65CEB46D2BC19DF000A72035 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		65EE3E8C2BB63CDD00A380CA /* ContatsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EE3E8F2BB63CDD00A380CA /* ContactsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSwiftUIApp.swift; sourceTree = "<group>"; };
 		65EE3E912BB63CDD00A380CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -60,7 +80,9 @@
 		65AAE79F2BBB3C3D0024610A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65CEB4612BC19DE200A72035 /* FMDB */,
 				65EE3EA12BB640F600A380CA /* ContactsModel.swift */,
+				65CEB45D2BC19D6B00A72035 /* kisiler.sqlite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,11 +105,39 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		65CEB45F2BC19DB100A72035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65CEB4602BC19DB100A72035 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65CEB4612BC19DE200A72035 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				65CEB4682BC19DF000A72035 /* FMDatabase.h */,
+				65CEB4672BC19DF000A72035 /* FMDatabase.m */,
+				65CEB4692BC19DF000A72035 /* FMDatabaseAdditions.h */,
+				65CEB46D2BC19DF000A72035 /* FMDatabaseAdditions.m */,
+				65CEB46C2BC19DF000A72035 /* FMDatabasePool.h */,
+				65CEB4652BC19DF000A72035 /* FMDatabasePool.m */,
+				65CEB4662BC19DF000A72035 /* FMDatabaseQueue.h */,
+				65CEB4642BC19DF000A72035 /* FMDatabaseQueue.m */,
+				65CEB46A2BC19DF000A72035 /* FMDB.h */,
+				65CEB4632BC19DF000A72035 /* FMResultSet.h */,
+				65CEB46B2BC19DF000A72035 /* FMResultSet.m */,
+				65CEB4622BC19DF000A72035 /* ContatsSwiftUI-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		65EE3E832BB63CDD00A380CA = {
 			isa = PBXGroup;
 			children = (
 				65EE3E8E2BB63CDD00A380CA /* ContatsSwiftUI */,
 				65EE3E8D2BB63CDD00A380CA /* Products */,
+				65CEB45F2BC19DB100A72035 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +202,7 @@
 				TargetAttributes = {
 					65EE3E8B2BB63CDD00A380CA = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -180,6 +231,7 @@
 			files = (
 				65EE3E972BB63CDF00A380CA /* Preview Assets.xcassets in Resources */,
 				65EE3E942BB63CDF00A380CA /* Assets.xcassets in Resources */,
+				65CEB45E2BC19D6B00A72035 /* kisiler.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +245,13 @@
 				65EE3EA22BB640F700A380CA /* ContactsModel.swift in Sources */,
 				65EE3E9E2BB63CF400A380CA /* RegisterView.swift in Sources */,
 				65AAE7A42BBB3D320024610A /* HomeViewModel.swift in Sources */,
+				65CEB4702BC19DF000A72035 /* FMDatabase.m in Sources */,
 				65AAE7A62BBB3D650024610A /* RegisterViewModel.swift in Sources */,
+				65CEB4722BC19DF000A72035 /* FMDatabaseAdditions.m in Sources */,
 				65AAE7A82BBB3D770024610A /* DetailViewModel.swift in Sources */,
+				65CEB4712BC19DF000A72035 /* FMResultSet.m in Sources */,
+				65CEB46F2BC19DF000A72035 /* FMDatabasePool.m in Sources */,
+				65CEB46E2BC19DF000A72035 /* FMDatabaseQueue.m in Sources */,
 				65EE3E922BB63CDD00A380CA /* HomeView.swift in Sources */,
 				65EE3EA42BB6427700A380CA /* ContactsRow.swift in Sources */,
 				65EE3EA02BB63CFF00A380CA /* DetailView.swift in Sources */,
@@ -329,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ContatsSwiftUI/Preview Content\"";
@@ -339,8 +397,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +407,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkancingoz.ContatsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ContatsSwiftUI/Model/FMDB/ContatsSwiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ContatsSwiftUI/Preview Content\"";
@@ -369,8 +430,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkancingoz.ContatsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ContatsSwiftUI/Model/FMDB/ContatsSwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
